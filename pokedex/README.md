@@ -1,8 +1,5 @@
 # Simple Pokedex
-- shows a list of pokemon
-- pagination to next and prev page
 ![pokedex](src/assets/pokedex.png)
-![pokeloading](src/assets/loading.png)
 
 
 ## Support material
