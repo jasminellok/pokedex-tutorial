@@ -1,7 +1,9 @@
 import React, {useState, useEffect} from "react";
-import PokemonList from "./PokemonList";
+import PokemonList from "./components/PokemonList";
+import Pagination from "./components/Pagination";
+import Loading from "./components/Loading";
 import axios from "axios";
-import Pagination from "./Pagination";
+
 
 function App() {
   const pg1Url = "https://pokeapi.co/api/v2/pokemon"
@@ -23,8 +25,9 @@ function App() {
     });
     setTimeout(function(){
       setLoading(false);
-   }, 200);
+   }, 600000);
     const {data: {results}} = resp;
+    console.log(results)
     setNextPageUrl(resp.data.next);
     setPrevPageUrl(resp.data.previous);
     setPokemon(results.map(p => p.name));
@@ -39,9 +42,7 @@ function App() {
     setCurrPageUrl(prevPageUrl);
   }
 
-  if(loading) {
-    return (<div>LOADING...</div>)
-  }
+  if (loading) return <Loading/>;
 
   return (
     <div className="App">

@@ -1,7 +1,7 @@
 # Simple Pokedex
 - shows a list of pokemon
 - pagination to next and prev page
-- tutorial from https://github.com/WebDevSimplified/React-Pokemon-Pagination
+- tutorial source: https://github.com/WebDevSimplified/React-Pokemon-Pagination
 
 ## Available Scripts
 
