@@ -14,7 +14,7 @@ export default function PokemonList({pokemon}) {
       </HeaderWrapper>
       <ListWrapper>
         {pokemon.map(p => (
-            <ListItem key={p}>{p}</ListItem>
+            <ListItem key={p}> <p>{p}</p> </ListItem>
         ))}
       </ListWrapper>
     </React.Fragment>

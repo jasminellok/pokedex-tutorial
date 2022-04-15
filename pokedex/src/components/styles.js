@@ -13,11 +13,10 @@ export const LoadingWrapper = styled.div`
 `
 
 export const ListWrapper = styled.ul`
-  padding: 20px;
+  padding-bottom: 20px;
   display: flex;
   flex-direction:column;
   justify-content: center;
-  align-item:center;
   > * {
     padding: 2px;
   }
@@ -27,6 +26,9 @@ export const ListItem = styled.li`
   font-family: "Courier New";
   padding-left: 5px;
   color: #ef476f;
+  display: flex;
+  justify-content: center;
+  align-item:center;
 `
 
 export const HeaderWrapper = styled.div`
