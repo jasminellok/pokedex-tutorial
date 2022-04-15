@@ -1,5 +1,6 @@
 import styled, {keyframes} from 'styled-components'
 
+
 const BounceAnimation = keyframes`
   50% { margin-bottom: 1rem }
 `
@@ -14,8 +15,9 @@ export const LoadingWrapper = styled.div`
 export const ListWrapper = styled.ul`
   padding: 20px;
   display: flex;
-  flex-direction: column;
+  flex-direction:column;
   justify-content: center;
+  align-item:center;
   > * {
     padding: 2px;
   }
@@ -27,11 +29,19 @@ export const ListItem = styled.li`
   color: #ef476f;
 `
 
+export const HeaderWrapper = styled.div`
+  display: flex;
+  align-items:center;
+  justify-content: center;
+`
+
 export const Header2 = styled.h2`
   padding-bottom: 5px;
   font-family: "Courier New";
   font-weight: bolder;
   color: #073b4c;
+  align-items: center;
+  align-text: center;
 `
 export const PageBtns = styled.div`
   display: flex;
@@ -47,13 +57,16 @@ export const Buttons = styled.button`
   border-radius: 5px;
   border: 1px solid #073b4c;
 `
-
-export const PikaDot = styled.div`
-  background-image: url('react/tutorials/pokedex/assets/pikadot.png');
+export const PikaTail = styled.img`
   border-radius: 50%;
-  width: 0.50rem;
-  height: 0.50rem;
-  margin: 0 0.25rem;
+  width: 100px;
+  height: 100px;
+`
+
+export const PikaDot = styled.img`
+  border-radius: 50%;
+  width: 60px;
+  height: 50px;
   /*Animation*/
   animation: ${BounceAnimation} 0.5s linear infinite;
   animation-delay: ${(props) => props.delay};

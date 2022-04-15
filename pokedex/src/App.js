@@ -25,7 +25,7 @@ function App() {
     });
     setTimeout(function(){
       setLoading(false);
-   }, 600000);
+   }, 600);
     const {data: {results}} = resp;
     console.log(results)
     setNextPageUrl(resp.data.next);
